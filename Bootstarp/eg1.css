@@ -1,0 +1,17 @@
+.text-white{
+    color: black !important; /* we should apply for some styles by default*/
+}
+
+.display-5{
+    color: red; 
+}
+
+.container-sm{
+    background: floralwhite;
+    padding-left: 30px;
+    border-style: dotted !important;
+}
+
+.bg-success{
+    color: white;
+}
