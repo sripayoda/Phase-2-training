@@ -1,0 +1,32 @@
+.container-fluid{
+    background-color:rgb(193, 236, 128);
+    opacity: 0.5;
+    padding: 0.3rem;
+    position: fixed;
+    top: 0px
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1491497895121-1334fc14d8c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+}
+
+.container{
+    padding: 0.2rem;
+    margin-top: 6rem;
+    background-color: azure;
+    border-radius: 10px;
+}
+.container-para{color: rgba(0, 0, 0,1);}
+
+footer{
+    background-color: rgb(193, 236, 128);
+    opacity: 0.5;
+    margin-bottom: 0px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 50px;
+}
