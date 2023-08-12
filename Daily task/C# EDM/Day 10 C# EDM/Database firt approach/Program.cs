@@ -1,6 +1,13 @@
 ﻿using EFDBF;
 
-CRUD crud = new CRUD();
-crud.AddNewDept();
-//crud.UpdateDept();
-crud.DeleteDept();
+//Department CRUD Operations
+DepartmentCRUD Deptcrud = new DepartmentCRUD();
+Deptcrud.AddNewDept();
+Deptcrud.UpdateDept();
+Deptcrud.DeleteDept();
+
+//Employee CRUD Operations
+EmployeeCRUD employeeCRUD = new EmployeeCRUD();
+employeeCRUD.AddNewEmployee();
+employeeCRUD.UpdateEmployee();
+employeeCRUD.DeleteEmployee();

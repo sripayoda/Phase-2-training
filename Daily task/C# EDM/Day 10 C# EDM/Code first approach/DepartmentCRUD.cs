@@ -1,23 +1,24 @@
-﻿using EFDBF.Models;
+﻿using EFCF.Models;
+using EFCF.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EFDBF
+namespace EFCF
 {
-    internal class CRUD
+    internal class DepartmentCRUD
     {
        
         public void AddNewDept()
         {
-            using (var context = new EmployeeManagementContext())
+            using (var context = new EmployeeMgmt())
             {
                 var dept = new Dept()
                 {
-                    Deptno = 11,
-                    Dname = "Hr"
+                    Deptno = 13,
+                    Deptname = "Hr"
                 };
                 context.Depts.Add(dept);
                 context.SaveChanges();
@@ -26,15 +27,15 @@ namespace EFDBF
 
         public void UpdateDept() 
         { 
-            var context = new EmployeeManagementContext();
+            var context = new EmployeeMgmt();
             var seldept = context.Depts.FirstOrDefault(d => d.Deptno == 10);
-            seldept.Dname = "Dev";
+            seldept.Deptname = "Dev";
             context.SaveChanges();
         }
 
         public void DeleteDept() 
         {
-            var context = new EmployeeManagementContext();
+            var context = new EmployeeMgmt();
             var seldept = context.Depts.FirstOrDefault(d => d.Deptno == 10);
             context.Depts.Remove(seldept);
             context.SaveChanges();
