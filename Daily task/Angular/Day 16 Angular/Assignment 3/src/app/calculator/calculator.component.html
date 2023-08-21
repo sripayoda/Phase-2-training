@@ -1,0 +1,21 @@
+<div class="calculator">
+    <div class="display" [innerText]="expression"></div>
+    <button class="btn" (click)="buttonclick('7')">7</button>
+    <button class="btn" (click)="buttonclick('8')">8</button>
+    <button class="btn" (click)="buttonclick('9')">9</button>
+    <button class="btn" (click)="buttonclick('*')">X</button>
+    <button class="btn" (click)="buttonclick('4')">4</button>
+    <button class="btn" (click)="buttonclick('5')">5</button>
+    <button class="btn" (click)="buttonclick('6')">6</button>
+    <button class="btn" (click)="buttonclick('/')">/</button>
+    <button class="btn" (click)="buttonclick('1')">1</button>
+    <button class="btn" (click)="buttonclick('2')">2</button>
+    <button class="btn" (click)="buttonclick('3')">3</button>
+    <button class="btn" (click)="buttonclick('-')">-</button>
+    <button class="btn" (click)="buttonclick('0')">0</button>
+    <button class="btn" (click)="buttonclick('.')">.</button>
+    <button class="btn" (click)="buttonclick('%')">%</button>
+    <button class="btn" (click)="equal()">=</button>
+    <button class="btn" (click)="clr()">CLR</button>
+    <button class="btn" (click)="bck()">&#9003;</button>
+  </div>
