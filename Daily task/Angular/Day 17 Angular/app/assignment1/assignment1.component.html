@@ -1,0 +1,32 @@
+<div class="temperature_calculator">
+    <table>
+        <tr>
+            <td>
+            <label for="input_temperature">Enter the temperature : </label>
+            </td>
+            <td>
+            <input id="input_temperature" type="text" [(ngModel)]="input_temperature"/>
+            </td>
+            <td>
+                Select Type : 
+                <select [(ngModel)]="selectedUnit">
+                    <option value="1">Fahrenheit</option>
+                    <option value="2">Celsius</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">
+            <button (click)="convert()">CONVERT</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="output_temperature">Converted : </label>
+            </td>
+            <td>
+            <input id="output_temperature" type="text" [(ngModel)]="output_temperature"/>
+            </td>
+        </tr>
+    </table>
+</div>
